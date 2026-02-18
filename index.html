@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew - Crafted for Coffee Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Brew</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <img src="images/Hero.png" alt="Coffee Hero" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="pre-heading">Experience the</p>
+            <h1>Perfect Brew</h1>
+            <p class="sub-heading">Discover exceptional coffee crafted just for you.</p>
+            <a href="#menu" class="btn-primary">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>At Brew, we believe that coffee is more than just a drink; it's an experience. Sourced from the
+                    finest beans around the world and roasted with passion, every cup tells a story of tradition and
+                    quality.</p>
+            </div>
+            <div class="about-image">
+                <!-- Image will be inserted here -->
+                <img src="images/about.svg" alt="About Brew">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="card">
+                    <img src="images/espresso.svg" alt="Espresso">
+                    <div class="card-info">
+                        <h3>Espresso</h3>
+                        <p>Rich, bold, and concentrated coffee shot.</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/latte.svg" alt="Latte">
+                    <div class="card-info">
+                        <h3>Latte</h3>
+                        <p>Smooth espresso with steamed milk and a thin layer of foam.</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/cappuccino.svg" alt="Cappuccino">
+                    <div class="card-info">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso with equal parts steamed milk and foam.</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/mocha.svg" alt="Mocha">
+                    <div class="card-info">
+                        <h3>Mocha</h3>
+                        <p>Espresso mixed with hot chocolate and steamed milk.</p>
+                        <span class="price">$5.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section class="special-offer">
+        <div class="container">
+            <h2>Special Offer!</h2>
+            <p>Get 20% off your first order with code: <strong>BREW20</strong></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Brew. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
