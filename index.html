@@ -4,121 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brew - Crafted for Coffee Lovers</title>
+    <title>Brew - Crafted for True Coffee Lovers</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">Brew</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Brew.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header id="home" class="hero">
-        <img src="images/Hero.png" alt="Coffee Hero" class="hero-bg">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="pre-heading">Experience the</p>
-            <h1>Perfect Brew</h1>
-            <p class="sub-heading">Discover exceptional coffee crafted just for you.</p>
-            <a href="#menu" class="btn-primary">Shop Now</a>
+        <div class="hero-content fade-in-up">
+            <span class="eyebrow">The Premium Selection</span>
+            <h1>Crafted for<br>True Coffee Lovers</h1>
+            <p>Experience the art of roasting. Sourced ethically from the world's finest independent farmers, roasted in
+                small batches for exceptional taste.</p>
+            <a href="#shop" class="btn-primary">Explore Collection</a>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-text">
-                <h2>Our Story</h2>
-                <p>At Brew, we believe that coffee is more than just a drink; it's an experience. Sourced from the
-                    finest beans around the world and roasted with passion, every cup tells a story of tradition and
-                    quality.</p>
+    <!-- Signature Product Section -->
+    <section id="signature" class="signature section-padding">
+        <div class="container signature-layout">
+            <div class="signature-text fade-in-left">
+                <span class="eyebrow">Our Signature</span>
+                <h2>The Midnight Reserve</h2>
+                <p>A bold, complex blend born from the rich volcanic soils of the Andes. Notes of dark chocolate,
+                    toasted hazelnut, and a hint of wild berry. Perfect for the aficionado seeking depth and character
+                    in every cup.</p>
+                <div class="price-action">
+                    <span class="price">$24.00</span>
+                    <a href="#shop" class="btn-secondary">Add to Bag</a>
+                </div>
             </div>
-            <div class="about-image">
-                <!-- Image will be inserted here -->
-                <img src="images/about.svg" alt="About Brew">
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu">
-        <div class="container">
-            <h2>Our Menu</h2>
-            <div class="menu-grid">
-                <div class="card">
-                    <img src="images/espresso.svg" alt="Espresso">
-                    <div class="card-info">
-                        <h3>Espresso</h3>
-                        <p>Rich, bold, and concentrated coffee shot.</p>
-                        <span class="price">$3.50</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/latte.svg" alt="Latte">
-                    <div class="card-info">
-                        <h3>Latte</h3>
-                        <p>Smooth espresso with steamed milk and a thin layer of foam.</p>
-                        <span class="price">$4.50</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/cappuccino.svg" alt="Cappuccino">
-                    <div class="card-info">
-                        <h3>Cappuccino</h3>
-                        <p>Espresso with equal parts steamed milk and foam.</p>
-                        <span class="price">$4.50</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/mocha.svg" alt="Mocha">
-                    <div class="card-info">
-                        <h3>Mocha</h3>
-                        <p>Espresso mixed with hot chocolate and steamed milk.</p>
-                        <span class="price">$5.00</span>
-                    </div>
+            <div class="signature-image fade-in-right">
+                <div class="image-wrapper">
+                    <img src="images/signature.png" alt="The Midnight Reserve">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Special Offer Section -->
-    <section class="special-offer">
+    <!-- Philosophy Section -->
+    <section id="story" class="philosophy section-padding bg-darker">
         <div class="container">
-            <h2>Special Offer!</h2>
-            <p>Get 20% off your first order with code: <strong>BREW20</strong></p>
+            <div class="section-header fade-in-up">
+                <h2>Our Philosophy</h2>
+                <p>We believe in transparency, quality, and community. Every bean tells a story of dedication.</p>
+            </div>
+            <div class="philosophy-grid">
+                <div class="phil-item fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="phil-icon">🌱</div>
+                    <h3>Ethical Sourcing</h3>
+                    <p>We work directly with farmers, ensuring fair wages and sustainable agricultural practices that
+                        protect the earth.</p>
+                </div>
+                <div class="phil-item fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="phil-icon">🔥</div>
+                    <h3>Artisan Roasting</h3>
+                    <p>Roasted in small, precise batches to unlock the maximum potential and unique flavor profile of
+                        each origin.</p>
+                </div>
+                <div class="phil-item fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="phil-icon">☕</div>
+                    <h3>Perfect Experience</h3>
+                    <p>From bean to cup, we are obsessed with providing you an unparalleled, luxurious coffee moment
+                        every morning.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Featured Collection -->
+    <section id="shop" class="collection section-padding">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
+            <div class="section-header fade-in-up">
+                <h2>The Collection</h2>
+            </div>
+            <div class="collection-grid">
+                <!-- Product 1 -->
+                <div class="product-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="product-img">
+                        <img src="images/dark_espresso.png" alt="Espresso Roast">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dark Espresso</h3>
+                        <p class="origin">Single Origin: Colombia</p>
+                        <p class="tasting-notes">Notes: Cacao, Brown Sugar</p>
+                        <span class="price">$18.00</span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="product-img">
+                        <img src="images/morning_light.png" alt="Breakfast Blend">
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Morning Light</h3>
+                        <p class="origin">Blend: East Africa & Central America</p>
+                        <p class="tasting-notes">Notes: Citrus, Honey, Floral</p>
+                        <span class="price">$19.00</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="product-img">
+                        <img src="images/twilight_decaf.png" alt="Decaf Reserve">
+                    </div>
+                    <div class="product-info">
+                        <h3>Twilight Decaf</h3>
+                        <p class="origin">Single Origin: Peru (Swiss Water)</p>
+                        <p class="tasting-notes">Notes: Maple, Pecan, Smooth</p>
+                        <span class="price">$21.00</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Brew. All rights reserved.</p>
+    <!-- Brew Process -->
+    <section class="process section-padding bg-darker">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>The Art of Brewing</h2>
+                <p>Mastering the perfect cup is a journey. Follow our guide for the ultimate extraction.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="step-num">01</div>
+                    <h3>Grind Fresh</h3>
+                    <p>Use a burr grinder just before brewing to maximize aroma and flavor retention.</p>
+                </div>
+                <div class="step arrow fade-in-up" style="transition-delay: 0.2s;">➝</div>
+                <div class="step fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="step-num">02</div>
+                    <h3>Precise Ratio</h3>
+                    <p>We recommend a 1:16 coffee-to-water ratio weighed precisely on a digital scale.</p>
+                </div>
+                <div class="step arrow fade-in-up" style="transition-delay: 0.4s;">➝</div>
+                <div class="step fade-in-up" style="transition-delay: 0.5s;">
+                    <div class="step-num">03</div>
+                    <h3>Filtered Water</h3>
+                    <p>Brew with clean, filtered water just off the boil (around 200°F / 93°C) for optimal extraction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="test-wrapper fade-in-up">
+                <h2 class="quote-mark">"</h2>
+                <p class="quote">The Midnight Reserve is undoubtedly the finest coffee I've ever tasted. It has
+                    transformed my morning ritual into a moment of pure luxury.</p>
+                <div class="author">
+                    <strong>James Caldwell</strong>
+                    <span>Coffee Enthusiast</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Offer -->
+    <section class="subscription-section section-padding">
+        <div class="container fade-in-up">
+            <div class="sub-box">
+                <div class="sub-content">
+                    <h2>Join the Brew Club</h2>
+                    <p>Never run out of extraordinary coffee. Subscribe and receive freshly roasted beans delivered to
+                        your door every month. Skip or cancel anytime.</p>
+                    <a href="#subscribe" class="btn-primary">Become a Member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Brew.</a>
+                <p>Elevating the coffee experience through passion, precision, and ethical sourcing.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Coffee</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Gifts</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Sourcing</a></li>
+                    <li><a href="#">Roasting Process</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>hello@brewcoffee.com</p>
+                <p>1-800-BREW-NOW</p>
+                <div class="social-icons">
+                    <!-- Simple text representations for social icons given no external libs -->
+                    <a href="#">[ IG ]</a>
+                    <a href="#">[ TW ]</a>
+                    <a href="#">[ FB ]</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Brew Coffee Roasters. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
